@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& node server.js",
-    "server": "set NODE_ENV=production&& nodemon server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start ---prefix client",
     "clientinstall": "npm install --prefix client",
     "dev": "concurrently \"npm run client\" \"npm run server\""
